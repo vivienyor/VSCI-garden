@@ -1,0 +1,65 @@
+/* --- КРИСТАЛЬНО ЧИСТЫЙ СВЕТЛЫЙ СТИЛЬ QUARTZ --- */
+body, .md-container, .md-header, .md-tabs {
+    background-color: #ffffff !important;         /* Чистый белый фон */
+    box-shadow: none !important;
+}
+
+.md-typeset {
+    font-family: Georgia, serif !important;       /* Книжный шрифт */
+    font-size: 0.82rem !important;                /* Компактный размер */
+    line-height: 1.6;
+    color: #1a1a1a !important;                    
+}
+
+/* --- ЧИСТАЯ БОРДОВАЯ НАВИГАЦИЯ --- */
+.md-header__title, .md-tabs__link {
+    color: #1a1a1a !important;                    
+}
+.md-tabs__link--active {
+    color: #800020 !important;                    
+    font-weight: bold !important;
+}
+
+/* --- СТРОГИЕ ДАТЫ --- */
+.md-typeset ul li strong,
+.md-typeset ol li strong,
+.md-typeset p strong,
+.md-typeset h3 strong {
+    font-size: 0.72rem !important;                
+    color: #8a8882 !important;
+    font-weight: 400 !important;
+    font-family: Arial, sans-serif !important;
+    background: transparent !important;
+    padding: 0 !important;
+    margin-right: 6px !important;
+}
+
+/* --- ОТМЫВАЕМ ПОДВАЛ И УБИРАЕМ ЧЕРНУЮ ПОЛОСУ --- */
+.md-footer {
+    background-color: #ffffff !important;         /* Делаем подвал идеально белым */
+}
+
+.md-footer-meta {
+    background-color: #ffffff !important;         /* Смываем черную полосу */
+    border-top: 1px solid #e0ded7 !important;     /* Тонкая серая барочная линия */
+    margin-top: 40px;
+}
+
+.md-copyright {
+    color: #1a1a1a !important;                    /* Делаем текст ваших прав четким и черным */
+    font-size: 0.75rem !important;
+    font-family: Georgia, serif !important;
+}
+
+/* Полностью выжигаем заводские надписи и ссылки темы */
+.md-copyright, .md-footer-meta__inner hr, .md-footer-meta__inner a {
+    font-size: 0.75rem !important;
+    font-family: Georgia, serif !important;
+    color: #1a1a1a !important;
+}
+.md-copyright--with-button, 
+.md-footer-meta__inner .md-copyright a, 
+.md-footer-meta__inner iframe,
+.md-footer-meta__inner .md-footer-social {
+    display: none !important;      /* Прячем заводскую надпись Made with */
+}
