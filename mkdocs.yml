@@ -38,6 +38,7 @@ plugins:
   - macros
 
 markdown_extensions:
+  - attr_list # ФИКС: Позволяет управлять размерами и стилями картинок
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.tabbed:
@@ -48,10 +49,12 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
 
+
 nav:
-  - 🔬 Home: index.md
-  - 📐 Concepts: concepts.md
-  - 👤 About: about.md
+  - Home: index.md
+  - Concepts: concepts.md
+  - About: about.md
+
 
 extra_css:
   - stylesheets/extra.css
