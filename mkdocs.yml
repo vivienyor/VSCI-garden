@@ -1,0 +1,61 @@
+site_name: Vivien Yor - VSCI Laboratory
+site_url: https://github.io
+
+theme:
+  name: material
+  language: en
+  font:
+    text: Georgia
+    code: JetBrains Mono
+  
+  favicon: assets/favicon.ico
+  logo: assets/favicon.ico
+
+  # КРИТИЧЕСКИ ВАЖНО: заставляем MkDocs читать наш чистый footer.html
+  custom_dir: overrides
+
+  palette:
+    - scheme: default
+      primary: white
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.top
+    - navigation.tracking
+    - content.code.copy
+
+plugins:
+  - search
+  - roamlinks
+  - macros
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+nav:
+  - 🔬 Home: index.md
+  - 📐 Concepts: concepts.md
+  - 👤 About: about.md
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript: []
+
+copyright: "© 2026 VSCI Laboratory • Vivien Yor • ORCID: 0009-0009-7030-8151 • All Rights Reserved"
