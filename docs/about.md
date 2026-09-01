@@ -1,4 +1,4 @@
-# About the Author & VSCI Laboratory
+# About the Author & VSCI Laboratory CRAG
 
 Welcome to the central information node. This section codifies the operational perimeter, theoretical frameworks, and research infrastructure behind Vivien Yor's independent analytical projects.
 
@@ -9,16 +9,16 @@ Welcome to the central information node. This section codifies the operational p
 **Independent Analyst & Strategic Researcher**  
 *Academic Contours:* World Economy (EHEA Specialist), Strategic Advisory to Sovereign Think Tanks, Quantitative Modeling of Technology Market Fragmentation, Geo-Economic & Infrastructure Risk Audit. 
 
-![Vivien Yor](../assets/vivien-yor.jpg){: width="400" style="border-radius: 4px; border: 1px solid var(--md-typeset-color--light);" }
+![Vivien Yor](../assets/vivien-yor.jpg){ width="400" style="border-radius: 4px; border: 1px solid var(--md-typeset-color--light);" }
 
 ### 🔮 Core Theoretical Framework
 Our research focuses on tectonic structural shifts in the global system, specifically examining the deep, non-negotiable nexus between **critical technologies**, **finite physical resources**, and **sovereign geopolitical alliances**.
 
-#### Key Original Concepts:
-*   **Techno-Realism** — An analytical approach evaluating technological power through the precise lens of classical political realism.
-*   **Cyber-Baroque** — A conceptual framework exploring the complex, fragmented, labyrinthine, and ornamental nature of modern digital power structures and governance via engineered asymmetry.
-*   **Technological Westphalia** — The ongoing, irreversible fragmentation of the global digital space into sovereign, state-controlled technological zones and server monopolies.
-*   **VSCI Methodology & Index** — A proprietary quantitative framework designed to measure and analyze a state's real level of technological insulation and infrastructure autarky.
+#### Key Original Concepts
+* **Techno-Realism** — An analytical approach evaluating technological power through the precise lens of classical political realism.
+* **Cyber-Baroque** — A conceptual framework exploring the complex, fragmented, labyrinthine, and ornamental nature of modern digital power structures and governance via engineered asymmetry.
+* **Technological Westphalia** — The ongoing, irreversible fragmentation of the global digital space into sovereign, state-controlled technological zones and server monopolies.
+* **VSCI Methodology & Index** — A proprietary quantitative framework designed to measure and analyze a state's real level of technological insulation and infrastructure autarky.
 
 ---
 
@@ -46,6 +46,8 @@ The VSCI Laboratory operates as an independent, insulated research node in the e
   </div>
 
 </div>
+
+
 
 > "When a sovereign space lacks an independent digital perimeter, its independence is merely a temporary permission granted by a remote server." — Vivien Yor
 

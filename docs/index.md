@@ -1,6 +1,6 @@
-# VSCI Laboratory: Exploring the Architecture of Techno-Realism
+# VSCI Laboratory CRAG: Exploring the Architecture of Techno-Realism
 
-Welcome to the independent digital garden and research repository led by **Vivien Yor** (ORCID: [0009-0009-7030-8151](https://orcid.org)). 
+Welcome to the independent digital garden and research repository led by **Vivien Yor** (ORCID: [0009-0009-7030-8151](https://orcid.org)) — **CRAG: Centre for Research & Analysis of Geopolitics**.
 
 This platform serves as a sovereign intellectual outpost dedicated to the structural analysis of global civilizational fluctuations, the fragmentation of the Westphalian system, and the physical underpinnings of digital power.
 
@@ -25,18 +25,17 @@ The VSCI Laboratory operates on three non-negotiable principles:
 
 ---
 
-
 ## 📅 Laboratory Chronicle (Stream)
 
 Articles enter this stream automatically. Filter the chronicle by your operational language circuit below:
 
-<div class="language-filter" style="margin: 20px 0; padding: 10px; background: var(--md-code-bg-color); border-radius: 4px; display: flex; gap: 8px; flex-wrap: wrap; align-items: center;">
-  <strong>🌐 Filter:</strong> 
-  <button onclick="filterLang('all')" style="cursor:pointer; background:none; border:1px solid var(--md-typeset-color); color:var(--md-typeset-color); padding:4px 12px; border-radius:4px; font-size:0.85em;">All Circuits</button>
-  <button onclick="filterLang('en')" style="cursor:pointer; background:none; border:1px solid var(--md-typeset-color); color:var(--md-typeset-color); padding:4px 12px; border-radius:4px; font-size:0.85em;">🇬🇧 EN</button>
-  <button onclick="filterLang('ru')" style="cursor:pointer; background:none; border:1px solid var(--md-typeset-color); color:var(--md-typeset-color); padding:4px 12px; border-radius:4px; font-size:0.85em;">🇷🇺 RU</button>
-  <button onclick="filterLang('fr')" style="cursor:pointer; background:none; border:1px solid var(--md-typeset-color); color:var(--md-typeset-color); padding:4px 12px; border-radius:4px; font-size:0.85em;">🇫🇷 FR</button>
-  <button onclick="filterLang('es')" style="cursor:pointer; background:none; border:1px solid var(--md-typeset-color); color:var(--md-typeset-color); padding:4px 12px; border-radius:4px; font-size:0.85em;">🇪🇸 ES</button>
+<div class="language-filter" style="margin: 20px 0; padding: 12px 0; border-bottom: 1px solid var(--md-typeset-color--light); display: flex; gap: 25px; font-size: 0.85em; align-items: center;-webkit-user-select:none;user-select:none;">
+  <span style="color: #757575; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em;">Circuit:</span>
+  <span onclick="filterLang('all', this)" class="lang-btn" style="cursor:pointer; color: #000000; font-weight: 700; transition: all 0.2s;">All</span>
+  <span onclick="filterLang('en', this)" class="lang-btn" style="cursor:pointer; color: #757575; font-weight: 400; transition: all 0.2s;">EN</span>
+  <span onclick="filterLang('ru', this)" class="lang-btn" style="cursor:pointer; color: #757575; font-weight: 400; transition: all 0.2s;">RU</span>
+  <span onclick="filterLang('fr', this)" class="lang-btn" style="cursor:pointer; color: #757575; font-weight: 400; transition: all 0.2s;">FR</span>
+  <span onclick="filterLang('es', this)" class="lang-btn" style="cursor:pointer; color: #757575; font-weight: 400; transition: all 0.2s;">ES</span>
 </div>
 
 <ul class="stream-list" style="list-style: none; padding-left: 0;">
@@ -50,13 +49,13 @@ Articles enter this stream automatically. Filter the chronicle by your operation
     <code>2026-08-05</code> — 🇫🇷 <a href="concepts.md#baroque" style="font-weight: bold;">L'asymétrie numérique et la fin de l'utopie globale</a>
   </li>
   <li class="stream-item es" style="margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px dashed var(--md-typeset-color--light);">
-    <code>2026-07-29</code> — 🇪🇸 <a href="concepts.md#sovereignty" style="font-weight: bold;">El absolutismo de las platforms niches и el nuevo orden feudal</a>
+    <code>2026-07-29</code> — 🇪🇸 <a href="concepts.md#sovereignty" style="font-weight: bold;">El absolutismo de las plataformas nicho y el nuevo orden feudal</a>
   </li>
 </ul>
 
 ---
 
-## 📅 Project Septology: The 7-Volume Framework (2026–2027)
+## 📚 Project Septology: The 7-Volume Framework (2026–2027)
 
 This repository functions as the public launchpad for a comprehensive, multi-lingual seven-volume monograph designed to reframe global digital governance metrics prior to forthcoming doctoral proceedings at the London School of Economics (LSE).
 
@@ -76,15 +75,28 @@ This repository functions as the public launchpad for a comprehensive, multi-lin
 *   [👤 About the Author](about.md) — Formal academic biography, executive profile, institutional affiliations (LSE), and cryptographic keys.
 
 <p style="font-size: 0.85em; font-style: italic; opacity: 0.8; text-align: center; margin-top: 2rem;">
-All formal texts and manuscripts are systematically timestamped and deposited under international DOI registries via Zenodo (CERN), ensuring absolute copyright sovereignty.
+All formal texts and manuscripts are systematically timestamped and deposited under international DOI registries via Zenodo (CERN) within the repository infrastructure, ensuring absolute copyright sovereignty.
 </p>
 
 <script>
-function filterLang(lang) {
+function filterLang(lang, element) {
+  const isDark = document.body.getAttribute('data-md-color-scheme') === 'slate';
+  
+  const buttons = document.querySelectorAll('.language-filter .lang-btn');
+  buttons.forEach(btn => {
+    btn.style.color = '#757575';
+    btn.style.fontWeight = '400';
+  });
+  
+  if (element) {
+    element.style.color = isDark ? '#ffffff' : '#000000';
+    element.style.fontWeight = '700';
+  }
+
   const items = document.querySelectorAll('.stream-item');
   items.forEach(item => {
     if (lang === 'all' || item.classList.contains(lang)) {
-      item.style.display = 'block';
+      item.style.display = 'list-item';
     } else {
       item.style.display = 'none';
     }
