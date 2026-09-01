@@ -59,6 +59,10 @@ nav:
 extra_css:
   - stylesheets/extra.css
 
-extra_javascript: []
+extra_javascript:
+  - https://jsdelivr.net
+
+
+
 
 copyright: "© 2026 VSCI Laboratory • Vivien Yor • ORCID: 0009-0009-7030-8151 • All Rights Reserved"

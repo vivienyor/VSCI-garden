@@ -7,7 +7,7 @@ Welcome to the central information node. This section codifies the operational p
 ## 🏛️ Executive Profile: Vivien Yor
 
 **Independent Analyst & Strategic Researcher**  
-*Academic Contours:* World Economy (EHEA Specialist), Strategic Advisory to Sovereign Think Tanks, Quantitative Modeling of Technology Market Fragmentation, Geo-Economic & Infrastructure Risk Audit.
+*Academic Contours:* World Economy (EHEA Specialist), Strategic Advisory to Sovereign Think Tanks, Quantitative Modeling of Technology Market Fragmentation, Geo-Economic & Infrastructure Risk Audit. 
 
 ![Vivien Yor](../assets/vivien-yor.jpg){: width="400" style="border-radius: 4px; border: 1px solid var(--md-typeset-color--light);" }
 
@@ -51,11 +51,12 @@ The VSCI Laboratory operates as an independent, insulated research node in the e
 
 ---
 
-## 📚 Research Repositories & Digital Contours
 
-Academic works, policy briefs, and raw datasets are officially deposited and synchronized across international verified open-access nodes:
+### 📚 Research Repositories & Digital Contours
 
-*   **🌐 Central Node Hub:** [Google Sites Perimeter](https://sites.google.com/view/vivienyor/) — The core hub for the VSCI Laboratory, hosting full research projects and absolute methodology.
-*   **✍️ Operational Registry:** [Blogger Analytical Repository](https://vivienyor.blogspot.com/) — Operational updates, situational macroeconomic commentary, and field notes on current shifts.
-*   **📊 Open Data Vault:** [Zenodo Community Archive](https://zenodo.org/communities/vivien-yor-analytics) — Academic repository for officially deposited papers, verified mathematical models, and preprints at CERN Data Centre.
-*   **👤 Verification Record:** [ORCID iD: 0009-0009-7030-8151](https://orcid.org/0009-0009-7030-8151) — Verified international researcher identifier and academic publication synchronization log.
+Academic works, policy briefs, and raw datasets are officially deposited and synchronized across international verified open-access nodes: 
+
+* **🌐 Central Node Hub:** [Google Sites Perimeter](https://sites.google.com/view/vivienyor/) — The core hub for the VSCI Laboratory, hosting full research projects and absolute methodology.
+* **✍️ Operational Registry:** [Blogger Analytical Repository](https://vivienyor.blogspot.com/) — Operational updates, situational macroeconomic commentary, and field notes on current shifts.
+* **📊 Open Data Vault:** [Zenodo Community Archive](https://zenodo.org/communities/vivien-yor-analytics) — Academic repository for officially deposited papers, verified mathematical models, and preprints at CERN Data Centre.
+* **👤 Verification Record:** [ORCID iD: 0009-0009-7030-8151](https://orcid.org/0009-0009-7030-8151) — Verified international researcher identifier and academic publication synchronization log.

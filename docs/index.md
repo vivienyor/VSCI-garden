@@ -1,44 +1,30 @@
-# VSCI Laboratory
+# VSCI Laboratory: Exploring the Architecture of Techno-Realism
 
-Welcome to the digital perimeter of Vivien Yor's sovereign research space. This repository operates as a personal intelligence ledger and decentralized database, tracking the fragmentation of global infrastructure layers in the era of Cybernetic Baroque.
+Welcome to the independent digital garden and research repository led by **Vivien Yor** (ORCID: [0009-0009-7030-8151](https://orcid.org)). 
+
+This platform serves as a sovereign intellectual outpost dedicated to the structural analysis of global civilizational fluctuations, the fragmentation of the Westphalian system, and the physical underpinnings of digital power.
+
+---
+
+## ⚖️ The Core Paradigm: Pragmatic Techno-Realism
+
+Modern political economy and strategic studies are deeply corrupted by the illusion of "virtual abstraction." Concepts like "the cloud," "metaverse," and "frictionless borderless connectivity" disguise a much harsher reality. 
+
+> **Digital power is profoundly material, physical, and geomorphological.**
+
+The VSCI Laboratory operates on three non-negotiable principles:
+
+!!! info "💾 Physical Determinism"
+    Cyber-sovereignty is anchored to the ocean floor (subsea fiber-optic cables), pre-determined maritime choke points, rare-earth supply chains, and specialized deep-sea or cryogenic hardware.
+
+!!! abstract "⚙️ Algorithmic Enclosure"
+    Trans-national digital platforms (Big Tech) have assumed the roles of historical feudal lords, demanding data-rent, imposing private corporate justice, and systematically eroding state monopolies on identity and information.
+
+!!! danger "🔮 The Cyber-Baroque Condition"
+    The contemporary information landscape operates as a neo-baroque theater where geopolitical hysteria and calculated panic are weaponized to sustain the dominance of the digital aristocracy.
 
 ---
 
-## 🧱 Core Structural Pillars (VSCI Index)
-
-Our monitoring and forecasting architecture evaluates the critical level of technological insulation across four non-negotiable dimensions of sovereignty:
-
-<!-- НАЧАЛО БЛОЧНОЙ СЕТКИ (GRID) -->
-<div class="grid cards" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; margin-top: 1.5rem;">
-
-  <!-- Карточка 1 -->
-  <div class="card" style="border: 1px solid var(--md-typeset-color--light); padding: 1.2rem; border-radius: 6px; background: var(--md-code-bg-color);">
-    <h3 style="margin-top: 0;">💾 Silicon Layer</h3>
-    <p style="font-size: 0.9em; margin-bottom: 0; line-height: 1.4;">Physical semiconductor autarky, cleanroom dominance, and absolute lithography control.</p>
-  </div>
-
-  <!-- Карточка 2 -->
-  <div class="card" style="border: 1px solid var(--md-typeset-color--light); padding: 1.2rem; border-radius: 6px; background: var(--md-code-bg-color);">
-    <h3 style="margin-top: 0;">⚙️ Software Stack</h3>
-    <p style="font-size: 0.9em; margin-bottom: 0; line-height: 1.4;">Proprietary algorithmic perimeters, verified code repositories, and closed large language models.</p>
-  </div>
-
-  <!-- Карточка 3 -->
-  <div class="card" style="border: 1px solid var(--md-typeset-color--light); padding: 1.2rem; border-radius: 6px; background: var(--md-code-bg-color);">
-    <h3 style="margin-top: 0;">⚡ Energy Grid</h3>
-    <p style="font-size: 0.9em; margin-bottom: 0; line-height: 1.4;">Autonomous power matrices capable of sustaining regional data fortresses during structural rifts.</p>
-  </div>
-
-  <!-- Карточка 4 -->
-  <div class="card" style="border: 1px solid var(--md-typeset-color--light); padding: 1.2rem; border-radius: 6px; background: var(--md-code-bg-color);">
-    <h3 style="margin-top: 0;">🌐 Data Sovereignty</h3>
-    <p style="font-size: 0.9em; margin-bottom: 0; line-height: 1.4;">Locally insulated storage networks and absolute defense against external data extraction.</p>
-  </div>
-
-</div>
-<!-- КОНЕЦ БЛОЧНОЙ СЕТКИ -->
-
----
 
 ## 📅 Laboratory Chronicle (Stream)
 
@@ -64,16 +50,34 @@ Articles enter this stream automatically. Filter the chronicle by your operation
     <code>2026-08-05</code> — 🇫🇷 <a href="concepts.md#baroque" style="font-weight: bold;">L'asymétrie numérique et la fin de l'utopie globale</a>
   </li>
   <li class="stream-item es" style="margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px dashed var(--md-typeset-color--light);">
-    <code>2026-07-29</code> — 🇪🇸 <a href="concepts.md#sovereignty" style="font-weight: bold;">El absolutismo de las plataformas y el nuevo orden feudal</a>
+    <code>2026-07-29</code> — 🇪🇸 <a href="concepts.md#sovereignty" style="font-weight: bold;">El absolutismo de las platforms niches и el nuevo orden feudal</a>
   </li>
 </ul>
 
 ---
 
-## 🗺️ Navigation Ledger
+## 📅 Project Septology: The 7-Volume Framework (2026–2027)
 
-* **[Concepts & Glossary](concepts.md)** — The core mathematical architecture of the VSCI Index, weight coefficients, and fundamental philosophical vocabulary.
-* **[About the Author & Laboratory](about.md)** — Operational stance, intellectual perimeter, context, and background of the laboratory.
+This repository functions as the public launchpad for a comprehensive, multi-lingual seven-volume monograph designed to reframe global digital governance metrics prior to forthcoming doctoral proceedings at the London School of Economics (LSE).
+
+1. **Foundations of Techno-Realism** (Published | Language: EN) — *Laying out the VSCI Index methodologies.*
+2. **The Age of Cyber-Baroque** (Published | Language: FR) — *Deconstructing cognitive weaponization and algorithmic excess.*
+3. **Post-Westphalian Sovereignty** (Published | Language: ES) — *The rise of digital fiefdoms vs. state constitutions.*
+4. **The Geometry of Exclaves and Spatial Stability** (Published | Language: RU) — *Modeling the endurance of isolated sovereign nodes.*
+5. **Beneficiaries of Chaos** (Published | Language: RU) — *The grey-zone privates and proxy wars of tech cartels.*
+6. **Deep-Sea Sovereignty & The Polar Perimeter** (Forthcoming | Language: EN) — *The battle for the ocean bed, DARPA programs, and Arctic/Antarctic infrastructure.*
+7. **The Mathematical Apparatus of Future Civilizations** (Forthcoming | Language: EN) — *Formalized predictive equations for regional autarkies.*
+
+---
+
+## 🗺️ Navigating the Laboratory
+
+*   [📐 Concepts & VSCI Matrix](concepts.md) — The structured terminology, mathematical balance equations, and core infrastructural vectors.
+*   [👤 About the Author](about.md) — Formal academic biography, executive profile, institutional affiliations (LSE), and cryptographic keys.
+
+<p style="font-size: 0.85em; font-style: italic; opacity: 0.8; text-align: center; margin-top: 2rem;">
+All formal texts and manuscripts are systematically timestamped and deposited under international DOI registries via Zenodo (CERN), ensuring absolute copyright sovereignty.
+</p>
 
 <script>
 function filterLang(lang) {
