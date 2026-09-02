@@ -27,31 +27,127 @@ The VSCI Laboratory operates on three non-negotiable principles:
 
 ## 📅 Laboratory Chronicle (Stream)
 
-Articles enter this stream automatically. Filter the chronicle by your operational language circuit below:
-
-<div class="language-filter" style="margin: 20px 0; padding: 12px 0; border-bottom: 1px solid var(--md-typeset-color--light); display: flex; gap: 25px; font-size: 0.85em; align-items: center;-webkit-user-select:none;user-select:none;">
-  <span style="color: #757575; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em;">Circuit:</span>
-  <span onclick="filterLang('all', this)" class="lang-btn" style="cursor:pointer; color: #000000; font-weight: 700; transition: all 0.2s;">All</span>
-  <span onclick="filterLang('en', this)" class="lang-btn" style="cursor:pointer; color: #757575; font-weight: 400; transition: all 0.2s;">EN</span>
-  <span onclick="filterLang('ru', this)" class="lang-btn" style="cursor:pointer; color: #757575; font-weight: 400; transition: all 0.2s;">RU</span>
-  <span onclick="filterLang('fr', this)" class="lang-btn" style="cursor:pointer; color: #757575; font-weight: 400; transition: all 0.2s;">FR</span>
-  <span onclick="filterLang('es', this)" class="lang-btn" style="cursor:pointer; color: #757575; font-weight: 400; transition: all 0.2s;">ES</span>
+<!-- CHRONICLE STREAM WITH AUTOMATIC FETCH & LANGUAGE FILTER -->
+<div class="language-filter" style="margin: 20px 0; padding: 12px 0; border-bottom: 1px solid var(--md-typeset-color--light); display: flex; gap: 25px; font-size: 0.85em; align-items: center; -webkit-user-select:none; user-select:none;"> 
+    <span style="color: #757575; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em;">Circuit:</span> 
+    <span onclick="filterLang('all', this)" class="lang-btn" style="cursor:pointer; color: #000000; font-weight: 700; transition: all 0.2s;">All</span> 
+    <span onclick="filterLang('en', this)" class="lang-btn" style="cursor:pointer; color: #757575; font-weight: 400; transition: all 0.2s;">EN</span> 
+    <span onclick="filterLang('ru', this)" class="lang-btn" style="cursor:pointer; color: #757575; font-weight: 400; transition: all 0.2s;">RU</span> 
+    <span onclick="filterLang('fr', this)" class="lang-btn" style="cursor:pointer; color: #757575; font-weight: 400; transition: all 0.2s;">FR</span> 
+    <span onclick="filterLang('es', this)" class="lang-btn" style="cursor:pointer; color: #757575; font-weight: 400; transition: all 0.2s;">ES</span> 
 </div>
 
-<ul class="stream-list" style="list-style: none; padding-left: 0;">
-  <li class="stream-item ru" style="margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px dashed var(--md-typeset-color--light);">
-    <code>2026-08-20</code> — 🇷🇺 <a href="concepts.md#westphalia" style="font-weight: bold;">Технологическая Вестфалия: Раздел мира между Pax Silica и Китайским симбиозом</a>
-  </li>
-  <li class="stream-item en" style="margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px dashed var(--md-typeset-color--light);">
-    <code>2026-08-11</code> — 🇬🇧 <a href="concepts.md#technorealism" style="font-weight: bold;">Vivien Yor's Technorealism — How the Three Worlds of AI and the VSCI Index Rewrite Global Rules</a>
-  </li>
-  <li class="stream-item fr" style="margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px dashed var(--md-typeset-color--light);">
-    <code>2026-08-05</code> — 🇫🇷 <a href="concepts.md#baroque" style="font-weight: bold;">L'asymétrie numérique et la fin de l'utopie globale</a>
-  </li>
-  <li class="stream-item es" style="margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px dashed var(--md-typeset-color--light);">
-    <code>2026-07-29</code> — 🇪🇸 <a href="concepts.md#sovereignty" style="font-weight: bold;">El absolutismo de las plataformas nicho y el nuevo orden feudal</a>
-  </li>
+<ul id="stream-list" style="list-style: none; padding-left: 0;">
+    <li id="loading-status" style="color: #757575; font-style: italic;">Loading chronicle stream...</li>
 </ul>
+
+<script>
+const flags = { 'ru': '🇷🇺', 'en': '🇬🇧', 'fr': '🇫🇷', 'es': '🇪🇸' };
+
+async function loadChronicleAutomatically() {
+    const listElement = document.getElementById('stream-list');
+    let articlesData = [];
+    
+    try {
+        const responseIndex = await fetch('search/search_index.json');
+        if (!responseIndex.ok) throw new Error("Search index not found");
+        const searchData = await responseIndex.json();
+        
+        // Фильтруем документы из папки articles/
+        const articles = searchData.docs.filter(doc => doc.location.includes('articles/') && !doc.location.includes('#'));
+        
+        articles.forEach(art => {
+            const segments = art.location.split('/').filter(Boolean);
+            if (segments.length === 0 || segments[segments.length - 1] === 'articles') return;
+
+            const titleText = art.title || segments[segments.length - 1];
+            const locationText = art.location.toLowerCase();
+
+            // Безошибочное автоматическое определение языка:
+            let artLang = "en"; // По умолчанию английский
+
+            // 1. Проверяем наличие русских букв в заголовке
+            if (/[а-яА-ЯёЁ]/.test(titleText)) {
+                artLang = "ru";
+            } 
+            // 2. Или проверяем упоминание языка в системном пути ссылки
+            else if (locationText.includes('/ru/') || locationText.endsWith('_ru')) {
+                artLang = "ru";
+            } else if (locationText.includes('/fr/') || locationText.endsWith('_fr')) {
+                artLang = "fr";
+            } else if (locationText.includes('/es/') || locationText.endsWith('_es')) {
+                artLang = "es";
+            }
+
+            // Пытаемся вытащить дату из названия файла, если она там есть (ГГГГ-ММ-ДД)
+            let artDate = "2026-09-02"; 
+            const dateFromUrl = art.location.match(/([0-9]{4}-[0-9]{2}-[0-9]{2})/);
+            if (dateFromUrl) {
+                artDate = dateFromUrl[1];
+            }
+
+            articlesData.push({
+                date: artDate,
+                lang: artLang,
+                title: titleText,
+                link: art.location
+            });
+        });
+        
+        // Сортировка: свежие сверху
+        articlesData.sort((a, b) => b.date.localeCompare(a.date));
+        
+        listElement.innerHTML = '';
+        if (articlesData.length === 0) {
+            listElement.innerHTML = '<li style="color: #757575; font-style: italic;">No articles found in the directory.</li>';
+            return;
+        }
+        
+        // Отрисовка элементов в две строки
+        articlesData.forEach(item => {
+            const flag = flags[item.lang] || '🌐';
+            const li = document.createElement('li');
+            li.className = `stream-item ${item.lang}`;
+            li.style = "margin-bottom: 16px; padding-bottom: 10px; border-bottom: 1px dashed var(--md-typeset-color--light); display: flex; flex-direction: column; gap: 4px;";
+            
+            li.innerHTML = `
+                <div style="font-size: 0.85em; display: flex; gap: 8px; align-items: center;">
+                    <code>${item.date}</code> — ${flag}
+                </div>
+                <div style="font-size: 0.92em; line-height: 1.4;">
+                    <a href="${item.link}" style="font-weight: bold; text-decoration: none;">${item.title}</a>
+                </div>
+            `;
+            listElement.appendChild(li);
+        });
+        
+    } catch (error) {
+        console.error("Global auto-fetch error:", error);
+        listElement.innerHTML = '<li style="color: #757575; font-style: italic;">Error loading chronicle stream.</li>';
+    }
+}
+
+function filterLang(lang, btn) {
+    document.querySelectorAll('.lang-btn').forEach(b => {
+        b.style.color = '#757575';
+        b.style.fontWeight = '400';
+    });
+    btn.style.color = '#000000';
+    btn.style.fontWeight = '700';
+    
+    document.querySelectorAll('.stream-item').forEach(item => {
+        if (lang === 'all' || item.classList.contains(lang)) {
+            item.style.display = 'flex';
+        } else {
+            item.style.display = 'none';
+        }
+    });
+}
+
+document.addEventListener("DOMContentLoaded", loadChronicleAutomatically);
+</script>
+
+
 
 ---
 
