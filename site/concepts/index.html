@@ -51,6 +51,8 @@
       
     
     
+      <link rel="stylesheet" href="../katex/katex.min.css">
+    
       <link rel="stylesheet" href="../stylesheets/extra.css">
     
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
@@ -504,11 +506,27 @@
 <hr />
 <h2 id="formula-technical-definition">Formula &amp; Technical Definition</h2>
 <p>The absolute index score is synthesized as a linear-weighted balance equation, adjusting active infrastructural capabilities against critical dependencies:</p>
-<div class="arithmatex">\[VSCI = w_1 \cdot T + w_2 \cdot S + w_3 \cdot E + w_4 \cdot D - R\]</div>
-<p>Where:
-* <span class="arithmatex">\(0 \le T, S, E, D, R \le 1\)</span>
-* <span class="arithmatex">\(w_1 + w_2 + w_3 + w_4 = 1\)</span>
-* <span class="arithmatex">\(0 \le VSCI \le 1\)</span> <em>(Values closer to 1.0 indicate higher sovereignty)</em></p>
+<div style="font-size: 1.15em; line-height: 1.8; margin: 1.2em 0; padding: 1.2em; background: #f0f4f8; border-radius: 8px; border-left: 4px solid #003366;">
+  <p style="color: #003366; font-weight: bold; font-size: 1.25em; margin: 0 0 0.8em 0; padding-left: 0.25em;">
+    VSCI = w₁·T + w₂·S + w₃·E + w₄·D − R
+  </p>
+  <p style="color: #003366; font-weight: bold; margin: 0.5em 0 0.25em 0; padding-left: 0.25em;">
+    Where:
+  </p>
+  <span style="color: #003366; font-weight: bold; display: block; margin: 0.3em 0; padding-left: 0.75em;">
+    • 0 ≤ T, S, E, D, R ≤ 1
+  </span>
+  <span style="color: #003366; font-weight: bold; display: block; margin: 0.3em 0; padding-left: 0.75em;">
+    • w₁ + w₂ + w₃ + w₄ = 1
+  </span>
+  <span style="color: #003366; font-weight: bold; display: block; margin: 0.3em 0; padding-left: 0.75em;">
+    • 0 ≤ VSCI ≤ 1
+  </span>
+  <em style="color: #2c5282; font-size: 0.95em; display: block; margin-top: 0.5em; padding-left: 0.75em;">
+    (Values closer to 1.0 indicate higher sovereignty)
+  </em>
+</div>
+
 <hr />
 <h2 id="component-matrix-breakdown">Component Matrix Breakdown</h2>
 <table>
@@ -637,11 +655,9 @@
     
       <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
-        <script src="../javascripts/mathjax.js"></script>
+        <script src="../katex/katex.js"></script>
       
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-      
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../katex/contrib/auto-render.min.js"></script>
       
     
   </body>

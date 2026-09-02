@@ -62,10 +62,13 @@ nav:
 
 
 extra_css:
+  - katex/katex.min.css
   - stylesheets/extra.css
 
 extra_javascript:
-  - javascripts/mathjax.js
-  - https://jsdelivr.net
+  - katex/katex.js
+  - katex/contrib/auto-render.min.js
+
+
 
 copyright: "© 2026 VSCI Laboratory • Vivien Yor • ORCID: 0009-0009-7030-8151 • All Rights Reserved"

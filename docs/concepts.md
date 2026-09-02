@@ -23,12 +23,28 @@ The theoretical foundation of the VSCI Index maps directly onto four fundamental
 
 The absolute index score is synthesized as a linear-weighted balance equation, adjusting active infrastructural capabilities against critical dependencies:
 
-$$VSCI = w_1 \cdot T + w_2 \cdot S + w_3 \cdot E + w_4 \cdot D - R$$
+<div style="font-size: 1em; line-height: 1.7; margin: 1.2em 0; padding: 1.2em; background: #f0f4f8; border-radius: 8px; border-left: 4px solid #003366;">
+  <p style="color: #003366; font-weight: bold; font-size: 1.15em; margin: 0 0 0.8em 0; padding-left: 0.25em;">
+    VSCI = w₁·T + w₂·S + w₃·E + w₄·D − R
+  </p>
+  <p style="color: #003366; margin: 0.5em 0 0.25em 0; padding-left: 0.25em;">
+    Where:
+  </p>
+  <span style="color: #003366; display: block; margin: 0.25em 0; padding-left: 0.75em;">
+    • 0 ≤ T, S, E, D, R ≤ 1
+  </span>
+  <span style="color: #003366; display: block; margin: 0.25em 0; padding-left: 0.75em;">
+    • w₁ + w₂ + w₃ + w₄ = 1
+  </span>
+  <span style="color: #003366; display: block; margin: 0.25em 0; padding-left: 0.75em;">
+    • 0 ≤ VSCI ≤ 1
+  </span>
+  <em style="color: #2c5282; font-size: 0.95em; display: block; margin-top: 0.5em; padding-left: 0.75em;">
+    (Values closer to 1.0 indicate higher sovereignty)
+  </em>
+</div>
 
-Where:
-* $0 \le T, S, E, D, R \le 1$
-* $w_1 + w_2 + w_3 + w_4 = 1$
-* $0 \le VSCI \le 1$ *(Values closer to 1.0 indicate higher sovereignty)*
+
 
 ---
 
