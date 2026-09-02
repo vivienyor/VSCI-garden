@@ -168,7 +168,7 @@ This repository functions as the public launchpad for a comprehensive, multi-lin
 ## 🗺️ Navigating the Laboratory
 
 *   [📐 Concepts & VSCI Matrix](concepts.md) — The structured terminology, mathematical balance equations, and core infrastructural vectors.
-*   [👤 About the Author](about.md) — Formal academic biography, executive profile, institutional affiliations (LSE), and cryptographic keys.
+*   [👤 About the Author](about.md) — Formal academic biography, executive profile, and cryptographic keys.
 
 <p style="font-size: 0.85em; font-style: italic; opacity: 0.8; text-align: center; margin-top: 2rem;">
 All formal texts and manuscripts are systematically timestamped and deposited under international DOI registries via Zenodo (CERN) within the repository infrastructure, ensuring absolute copyright sovereignty.
