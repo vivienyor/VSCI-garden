@@ -1,3 +1,24 @@
+---
+title: "El nacionalismo de recursos del Global South"
+date: "2026-09-03"
+lang: es
+author: "Vivien Yor"
+status: "Draft"
+date_created: "2026-09-03"
+orcid: "0009-0009-7030-8151"
+zenodo_doi: ""
+zenodo_community: "Vivien Yor Analytics: Global Security and Multipolarity Studies"
+cross_communities:
+  - Digital Humanities
+  - Philosophy of Technology
+  - Global and International Studies
+primary_keywords:
+  - Technorealism
+camouflage_keywords:
+  - Digital Sovereignty
+---
+
+
 ## El nacionalismo de recursos del Global South: América Latina y África consolidan acuerdos directos a largo plazo en litio, cobalto и tierras raras al margen de las bolsas occidentales — Anatomía de la fractura del subsuelo tecnológico en 2026
 
 ---
