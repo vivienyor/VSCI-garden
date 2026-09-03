@@ -25,9 +25,7 @@ The VSCI Laboratory operates on three non-negotiable principles:
 
 ---
 
-## 📅 Laboratory Chronicle (Stream)
-
-<!-- CHRONICLE STREAM WITH AUTOMATIC FETCH & LANGUAGE FILTER -->
+<!-- 📅 Laboratory Chronicle (Stream) -->
 <div class="language-filter" style="margin: 20px 0; padding: 12px 0; border-bottom: 1px solid var(--md-typeset-color--light); display: flex; gap: 25px; font-size: 0.85em; align-items: center; -webkit-user-select:none; user-select:none;"> 
     <span style="color: #757575; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em;">Circuit:</span> 
     <span onclick="filterLang('all', this)" class="lang-btn" style="cursor:pointer; color: #000000; font-weight: 700; transition: all 0.2s;">All</span> 
@@ -53,7 +51,6 @@ async function loadChronicleAutomatically() {
         if (!responseIndex.ok) throw new Error("Search index not found");
         const searchData = await responseIndex.json();
         
-        // Фильтруем документы из папки articles/
         const articles = searchData.docs.filter(doc => doc.location.includes('articles/') && !doc.location.includes('#'));
         
         articles.forEach(art => {
@@ -62,24 +59,42 @@ async function loadChronicleAutomatically() {
 
             const titleText = art.title || segments[segments.length - 1];
             const locationText = art.location.toLowerCase();
+            const titleLower = titleText.toLowerCase();
 
-            // Безошибочное автоматическое определение языка:
-            let artLang = "en"; // По умолчанию английский
+            // Автоматическое определение языка
+            let artLang = "en"; // По умолчанию
 
-            // 1. Проверяем наличие русских букв в заголовке
+            // 1. Проверка на русский язык
             if (/[а-яА-ЯёЁ]/.test(titleText)) {
                 artLang = "ru";
             } 
-            // 2. Или проверяем упоминание языка в системном пути ссылки
-            else if (locationText.includes('/ru/') || locationText.endsWith('_ru')) {
-                artLang = "ru";
-            } else if (locationText.includes('/fr/') || locationText.endsWith('_fr')) {
-                artLang = "fr";
-            } else if (locationText.includes('/es/') || locationText.endsWith('_es')) {
+            // 2. Проверка на испанский язык (артикли, предлоги и суффиксы файлов)
+            else if (
+                titleLower.startsWith('el ') || 
+                titleLower.startsWith('la ') || 
+                titleLower.startsWith('los ') || 
+                titleLower.startsWith('las ') || 
+                titleLower.includes(' de ') || 
+                titleLower.includes(' del ') || 
+                locationText.endsWith('_es') || 
+                locationText.includes('/es/')
+            ) {
                 artLang = "es";
+            } 
+            // 3. Проверка на французский язык (артикли и суффиксы файлов)
+            else if (
+                titleLower.startsWith('le ') || 
+                titleLower.startsWith('la ') || 
+                titleLower.startsWith('les ') || 
+                titleLower.startsWith('un ') || 
+                titleLower.startsWith('une ') || 
+                locationText.endsWith('_fr') || 
+                locationText.includes('/fr/')
+            ) {
+                artLang = "fr";
             }
 
-            // Пытаемся вытащить дату из названия файла, если она там есть (ГГГГ-ММ-ДД)
+            // Парсинг даты из URL
             let artDate = "2026-09-02"; 
             const dateFromUrl = art.location.match(/([0-9]{4}-[0-9]{2}-[0-9]{2})/);
             if (dateFromUrl) {
@@ -103,7 +118,7 @@ async function loadChronicleAutomatically() {
             return;
         }
         
-        // Отрисовка элементов в две строки
+        // Отрисовка
         articlesData.forEach(item => {
             const flag = flags[item.lang] || '🌐';
             const li = document.createElement('li');
