@@ -47,78 +47,58 @@ async function loadChronicleAutomatically() {
     let articlesData = [];
     
     try {
-        const responseIndex = await fetch('search/search_index.json');
+        // Принудительно запрашиваем свежий индекс без кэша браузера
+        const responseIndex = await fetch('search/search_index.json?t=' + new Date().getTime());
         if (!responseIndex.ok) throw new Error("Search index not found");
         const searchData = await responseIndex.json();
         
+        // Фильтруем только страницы из папки articles/
         const articles = searchData.docs.filter(doc => doc.location.includes('articles/') && !doc.location.includes('#'));
         
         articles.forEach(art => {
             const segments = art.location.split('/').filter(Boolean);
             if (segments.length === 0 || segments[segments.length - 1] === 'articles') return;
 
-            const titleText = art.title || segments[segments.length - 1];
-            const locationText = art.location.toLowerCase();
-            const titleLower = titleText.toLowerCase();
+            // Вытаскиваем имя файла/последний сегмент пути (например: "ru_2026-09-05_moya-statya/")
+            const fileSegment = segments[segments.length - 1].toLowerCase();
+            
+            // Настройки по умолчанию
+            let artLang = "en";
+            let artDate = "2026-01-01";
 
-            // Автоматическое определение языка
-            let artLang = "en"; // По умолчанию
-
-            // 1. Проверка на русский язык
-            if (/[а-яА-ЯёЁ]/.test(titleText)) {
-                artLang = "ru";
-            } 
-            // 2. Проверка на испанский язык (артикли, предлоги и суффиксы файлов)
-            else if (
-                titleLower.startsWith('el ') || 
-                titleLower.startsWith('la ') || 
-                titleLower.startsWith('los ') || 
-                titleLower.startsWith('las ') || 
-                titleLower.includes(' de ') || 
-                titleLower.includes(' del ') || 
-                locationText.endsWith('_es') || 
-                locationText.includes('/es/')
-            ) {
-                artLang = "es";
-            } 
-            // 3. Проверка на французский язык (артикли и суффиксы файлов)
-            else if (
-                titleLower.startsWith('le ') || 
-                titleLower.startsWith('la ') || 
-                titleLower.startsWith('les ') || 
-                titleLower.startsWith('un ') || 
-                titleLower.startsWith('une ') || 
-                locationText.endsWith('_fr') || 
-                locationText.includes('/fr/')
-            ) {
-                artLang = "fr";
+            // 1. ИЗВЛЕКАЕМ ЯЗЫК ИЗ СИСТЕМНОГО ПУТИ (Ищет маркер в начале имени файла: ru_, en_, es_, fr_)
+            const langMatch = fileSegment.match(/^(ru|en|es|fr)_/);
+            if (langMatch) {
+                artLang = langMatch[1];
             }
 
-            // Парсинг даты из URL
-            let artDate = "2026-09-02"; 
-            const dateFromUrl = art.location.match(/([0-9]{4}-[0-9]{2}-[0-9]{2})/);
-            if (dateFromUrl) {
-                artDate = dateFromUrl[1];
+            // 2. ИЗВЛЕКАЕМ ДАТУ ИЗ СИСТЕМНОГО ПУТИ (Ищет ГГГГ-ММ-ДД)
+            const dateMatch = fileSegment.match(/([0-9]{4}-[0-9]{2}-[0-9]{2})/);
+            if (dateMatch) {
+                artDate = dateMatch[1];
             }
+
+            // Заголовок берем из индекса. Если он там сломан/отсутствует, берем имя файла
+            let displayTitle = art.title || segments[segments.length - 1];
 
             articlesData.push({
                 date: artDate,
                 lang: artLang,
-                title: titleText,
+                title: displayTitle,
                 link: art.location
             });
         });
         
-        // Сортировка: свежие сверху
+        // Сортировка: самые свежие даты сверху
         articlesData.sort((a, b) => b.date.localeCompare(a.date));
         
         listElement.innerHTML = '';
         if (articlesData.length === 0) {
-            listElement.innerHTML = '<li style="color: #757575; font-style: italic;">No articles found in the directory.</li>';
+            listElement.innerHTML = '<li style="color: #757575; font-style: italic;">No articles found.</li>';
             return;
         }
         
-        // Отрисовка
+        // Отрисовка элементов на странице
         articlesData.forEach(item => {
             const flag = flags[item.lang] || '🌐';
             const li = document.createElement('li');
@@ -136,6 +116,9 @@ async function loadChronicleAutomatically() {
             listElement.appendChild(li);
         });
         
+        // Включаем отображение вкладки All
+        filterLang('all', document.querySelector('.lang-btn'));
+        
     } catch (error) {
         console.error("Global auto-fetch error:", error);
         listElement.innerHTML = '<li style="color: #757575; font-style: italic;">Error loading chronicle stream.</li>';
@@ -143,6 +126,7 @@ async function loadChronicleAutomatically() {
 }
 
 function filterLang(lang, btn) {
+    if (!btn) return;
     document.querySelectorAll('.lang-btn').forEach(b => {
         b.style.color = '#757575';
         b.style.fontWeight = '400';
@@ -161,7 +145,6 @@ function filterLang(lang, btn) {
 
 document.addEventListener("DOMContentLoaded", loadChronicleAutomatically);
 </script>
-
 
 
 ---

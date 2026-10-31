@@ -33,9 +33,13 @@ theme:
     - content.code.copy
 
 plugins:
-  - search
+  - search:
+      user_properties:
+        - date
+        - lang
   - roamlinks
   - macros
+
 
 markdown_extensions:
   - attr_list # ФИКС: Позволяет управлять размерами и стилями картинок

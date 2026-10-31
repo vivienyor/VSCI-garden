@@ -1,3 +1,8 @@
+---
+title: "[en][2026-08-21] Vivien Yor's Technorealism - How the Three Worlds of AI and the VSCI Index Rewrite Global Rules"
+date: "2026-08-21"
+lang: en
+---
 
 # Vivien Yor's Technorealism - How the Three Worlds of AI and the VSCI Index Rewrite Global Rules
 

@@ -1,5 +1,5 @@
 ---
-title: "El nacionalismo de recursos del Global South"
+title: "[es][2026-09-03] El nacionalismo de recursos del Global South"
 date: "2026-09-03"
 lang: es
 author: "Vivien Yor"
