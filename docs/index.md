@@ -24,6 +24,9 @@ The VSCI Laboratory operates on three non-negotiable principles:
     The contemporary information landscape operates as a neo-baroque theater where geopolitical hysteria and calculated panic are weaponized to sustain the dominance of the digital aristocracy.
 
 ---
+## 📝 Published Analyses & Chronological Papers
+
+Chronological analytical notes & completed papers within the pragmatic techno‑realism paradigm
 
 <!-- 📅 Laboratory Chronicle (Stream) -->
 <div class="language-filter" style="margin: 20px 0; padding: 12px 0; border-bottom: 1px solid var(--md-typeset-color--light); display: flex; gap: 25px; font-size: 0.85em; align-items: center; -webkit-user-select:none; user-select:none;"> 
