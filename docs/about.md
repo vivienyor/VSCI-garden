@@ -60,5 +60,5 @@ Academic works, policy briefs, and raw datasets are officially deposited and syn
 
 * **🌐 Central Node Hub:** [Google Sites Perimeter](https://sites.google.com/view/vivienyor/) — The core hub for the VSCI Laboratory, hosting full research projects and absolute methodology.
 * **✍️ Operational Registry:** [Blogger Analytical Repository](https://vivienyor.blogspot.com/) — Operational updates, situational macroeconomic commentary, and field notes on current shifts.
-* **📊 Open Data Vault:** [Zenodo Community Archive](https://zenodo.org/communities/vivien-yor-analytics) — Academic repository for officially deposited papers, verified mathematical models, and preprints at CERN Data Centre.
+* **📊 Open Data Vault:** [Zenodo Community Archive](https://zenodo.org/communities/vivien-yor-analytics) — Academic repository for officially deposited papers, verified mathematical models, and preprints at CERN Data Centre. Additional records are deposited across OSF and Mendeley and retrievable via DOI or author‑name search.
 * **👤 Verification Record:** [ORCID iD: 0009-0009-7030-8151](https://orcid.org/0009-0009-7030-8151) — Verified international researcher identifier and academic publication synchronization log.
