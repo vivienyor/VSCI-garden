@@ -1,0 +1,111 @@
+---
+title: "THE ECONOMICS OF DIVIDED SOVEREIGNTY - OPTIMIZATION STRATEGIES FOR NATIONAL IT RESILIENCE AND THE GEOPOLITICAL RISK CRITICALITY MATRIX"
+date: "2026-11-25"
+lang: en
+---
+
+
+
+
+**Abstract**  
+This paper investigates the economic mechanisms driving the implementation of the "Divided Sovereignty" model amidst the macro-regional fragmentation of the global technology market. The author provides a critical re-examination of total digital autarky (isolationism), proving its financial and technological unsustainability for the vast majority of modern nation-states. As a pragmatic alternative, the concept of "switching independence" is introduced and economically justified, anchored in the principles of Business Continuity Management (BCM) and architectural resource distribution. For the first time, this work delivers a two-dimensional criticality matrix of state IT systems based on RTO/RPO metrics in the context of geopolitical shocks. It conducts a comparative analysis of the current positioning of key global actors—both "digital heavyweights" and smaller nations—on the approaches to this model, and delineates a long-term predictive scenario for the transformation of global IT expenditure patterns up to the year 2040.
+
+**Keywords:** divided sovereignty, economics of IT, switching independence, RTO, RPO, digital autarky, criticality matrix, IT infrastructure, IT budget, geopolitical risk.
+
+---
+
+## INTRODUCTION: THE IMPASSE OF AUTARKY AND THE QUEST FOR STRATEGIC COMPROMISE
+
+The contemporary stage of global capitalism is characterized by a profound contradiction between the transnational nature of digital technologies and the re-nationalization of political authority. Incidents spanning the early to mid-2020s—ranging from unprecedented sanctions pressure on China’s semiconductor industry and Russia’s financial sector to sweeping transboundary crashes of proprietary enterprise software—have vividly demonstrated that IT infrastructure has weaponized into a primary tool of the "gray zone" in hybrid geopolitical conflicts. Maintaining a one-hundred-percent reliance on a foreign technological stack is today synonymous with a voluntary abdication of political agency.
+
+In an attempt to mitigate these risks, several states have proclaimed a trajectory toward absolute, total technological sovereignty. However, a head-on implementation of this doctrine inevitably collides with the immutable laws of market economics. Constructing a closed, end-to-end national IT ecosystem—spanning from the foundational engineering of photolithography equipment and the growing of ultra-pure silicon ingots to the compilation of domestic operating systems and the training of sovereign generative neural networks—demands colossal capital expenditures (_CAPEX_), measured in hundreds of billions of dollars. Furthermore, the domestic market capacity of any single state (with the qualified exceptions of the US, China, and India) is structurally insufficient to ensure the self-sustainability of such investments over the long term. Attempting to force digital autarky yields two highly destructive consequences: the rapid exhaustion of the state budget and the lock-in of technological obsolescence caused by a vacuum of international cooperation.
+
+The conceptual resolution to this economic impasse emerges in the model of **Divided Sovereignty**. At its core lies the rejection of the utopian idea of "producing absolutely everything within one's own borders" in favor of a pragmatic strategy of "continuity risk management." Divided sovereignty does not forbid the utilization of cutting-edge, commercially efficient international IT solutions. Instead, it imposes a strict, imperative mandate: the existence of a fully autonomous, national "backup engine" at the critical nodes of state survival. The economic objective of the model is to minimize the costs of sustaining national security by achieving **"switching independence."** Under this architecture, a system is capable—within fractions of a second and without critical data loss—of severing ties with a compromised external vendor and seamlessly shifting operational control to an internal, domestic backup circuit.
+
+---
+
+## 1. ARCHITECTURAL MATHEMATICS AND THE TWO-SPEED COST MODEL
+
+The economic validation of the divided sovereignty model before ministries of finance and macroeconomic regulators relies on abandoning broad-spectrum import substitution in favor of highly targeted, risk-oriented resource allocation.
+
+### 1.1. The Pareto Effect in Cybernetic Space (The 20/80 Rule)
+
+Traditional approaches to technological sovereignty are financially crippling because they strive to substitute 100% of user software, entertainment content, intricate niche engineering platforms (CAD/CAM systems), and peripheral services. Conversely, divided sovereignty relies on a core cybernetic law: **20% of the foundational elements of an IT architecture safeguard 80% of a state’s systemic viability**.
+
+Investments are channeled exclusively into sovereignizing the "survival core": national clearing and payment gateways, core traffic routing protocols, national Domain Name Services (DNS), open-source general-purpose operating systems, and database management systems (DBMS). Developing and maintaining this compact core costs the state budget 70% to 85% less than deploying a full-scale duplicate ecosystem of mass consumer software, radically easing the burden on taxpayers.
+
+### 1.2. The Two-Speed Cost Management Model: Optimizing CAPEX and OPEX
+
+In an environment plagued by semiconductor shortages and the staggering costs of data center construction (where erecting 1 MW of commercial data center capacity varies from 800 million to 2.2 billion rubles), building redundant, idle physical infrastructure "just in case" is economically irrational. The divided sovereignty model transforms this challenge into operational expenses (_OPEX_) by implementing dynamic resource-sharing mechanisms:
+
+- During peacetime (standard operations), the state and enterprise sectors utilize highly efficient, globally distributed, or open cloud platforms to handle utilitarian, non-classified, civil, and commercial workloads. This minimizes overhead costs and enhances the overall competitiveness of the economy.
+- The national sovereign reserve functions in a state of "warm" or "cold" readiness. The physical capacities of state-owned data centers are never mothballed; instead, they remain loaded with low-priority computations (e.g., training domestic AI models, graphics rendering, or processing archival public service data). Upon the onset of a geopolitical shock (sanctions activation, license revocation, or disconnection from global transit cables), a "red button" algorithm triggers instantly. Background civil tasks are immediately frozen, and 100% of the liberated computing power and network bandwidth intercept critical operations to sustain the state’s vital infrastructure.
+
+---
+
+## 2. GEOPOLITICAL RTO/RPO METRICS AND THE IT SYSTEM CRITICALITY MATRIX
+
+In the corporate enterprise sector, resilience is traditionally quantified using _Recovery Time Objective_ (RTO—the target duration to restore a system) and _Recovery Point Objective_ (RPO—the target point determining acceptable data loss). Within the doctrine of divided sovereignty, these metrics are scaled up for the first time to the levels of national security and geopolitical analysis.
+
+Attempting to enforce RTO=0 (instantaneous, seamless real-time data mirroring) across an entire state IT landscape is financially ruinous. A rigorous differentiation of systems by criticality classes is required. To optimize budgetary appropriations, the following **Criticality Matrix of National IT Resources** has been developed:
+
+|Criticality Class|IT System Category|Geopolitical RTO|Geopolitical RPO|Redundancy Strategy & Circuit Type|
+|---|---|---|---|---|
+|**Class A** _(Existential)_|National payment gateways, Air & Missile Defense, nuclear and hydroelectric plant management, railway/air traffic control, interagency data exchange frameworks (SMEV).|`< 5 seconds`|`0 seconds (Absolute synchronicity)`|**Hot Standby:** Continuous active duplication. 100% sovereign technology stack. Foreign components are completely prohibited.|
+|**Class B** _(Systemic)_|Telecom billing infrastructures, municipal utilities platforms (GIS ZhKKh), digital medical registries, automated excise control systems, core ministry workflows, retail logistics chains.|`< 2 hours`|`< 5 minutes`|**Warm Standby:** Periodic data replication. Utilization of Open Source software with mandatory national patching is permitted.|
+|**Class C** _(Operational)_|Cadastral land registries, court management databases, tax registries, higher education digital frameworks, state archives, general enterprise resource planning (ERP) platforms.|`< 24 hours`|`< 1 hour`|**Cold Standby:** System restoration executed from secure sovereign backups onto reserved computing capacities within 24 hours.|
+|**Class D** _(Peripheral)_|Enterprise messengers, corporate CRM systems, graphic design software, digital marketing tools, non-critical municipal entertainment portals, standard office suites.|`Up to 7 days`|`Up to 24 hours`|**Commercial Sharing:** Maximized use of market-driven, globally available open solutions. No dedicated sovereign backup circuit is maintained; temporary substitution occurs upon failure.|
+
+---
+
+## 3. COMPARATIVE ANALYSIS: ACTORS NAVIGATING THE TRANSITION
+
+The global technological map clearly demonstrates that leading geopolitical actors have realized the futility of extremes—both blind global integration and total autarky. Consequently, they have initiated a structural drift toward divided sovereignty, albeit operating at varying stages of readiness.
+
+```
+       [ TRAJECTORY OF TRANSITION TOWARDS DIVIDED SOVEREIGNTY ]
+  
+  Autarky (Isolationism) ◄─── [PRC] ─── [RF] ───► Divided Sovereignty
+                                                    ▲
+  Globalism (Dependency) ◄─── [EU] ──── [Global South] ┘
+```
+
+### 3.1. The Russian Federation: From Forced Import Substitution to Systemic Redundancy
+
+Russia possesses the deepest and most dramatic practical experience in constructing Class A backup circuits. The National Payment Card System (NSPK) and the "Mir" payment network, conceptualized and fine-tuned long before major sanction shocks materialized, served as an archetypal case study for "switching independence." The moment international payment giants Visa and Mastercard departed the domestic market, internal transaction flows did not stall for a single second, seamlessly shifting to the pre-warmed local engine. Currently, Russia is actively completing the sovereignization of Class B and Class C architectures, mandating the transition of critical information infrastructure (CII) to domestic operating systems (such as Astra Linux or Red OS) and database architectures (Postgres Pro). The primary economic challenge for the Russian Federation remains overcoming hardware supply bottlenecks (specifically domestic semiconductor photolithography) and optimizing the operational maintenance costs of its sovereign data centers.
+
+### 3.2. The People's Republic of China: The "Dual-Circuit" Strategy
+
+The PRC holds the world’s most potent resource base for building a completely independent technology stack. The "Xinchuang" (IT Application Innovation) initiative targets the systematic elimination of foreign technologies from public and strategic sectors. However, Beijing deliberately steers clear of absolute autarky. Chinese tech titans (Huawei, Tencent, Alibaba) engineer dual-circuit architectures. One circuit is hyper-advanced, optimized for global market expansion across the Global South, Latin America, and Southeast Asia, adhering to international standards. The second circuit comprises a highly secured, deeply insulated internal sovereign core. China has navigated closest to an economically viable model of divided sovereignty, leveraging its massive domestic market to amortize heavy underlying CAPEX.
+
+### 3.3. The European Union: Hostages of the "Baroque Facade"
+
+The EU sits in a highly precarious economic position on the technological chessboard. For decades, Brussels invested almost exclusively in the "baroque facade"—regulatory compliance architectures (GDPR, AI Act) without cultivating its own hardware foundries, cloud hyperscalers, or tier-one frontier large language models. Attempting to enforce digital sovereignty solely via fines and directives, the EU discovers that the European economy remains structurally dependent on US-owned Class A and Class B infrastructure. Initiatives designed to architect sovereign European clouds (such as the Gaia-X project) are de facto stagnating because European enterprises refuse to absorb the premium pricing of an uncompetitive localized infrastructure.
+
+### 3.4. Smaller Nations and the Global South: The Trap of Forced Protectorates
+
+For developing nations across Africa, the Middle East, and parts of Latin America, creating a native proprietary stack or even a fully standalone Class A backup circuit is economically unfeasible. Their national IT budgets cannot sustain a sovereign core. These nations operate in a zone of maximum geopolitical vulnerability; they are structurally compelled to choose which technological metropolis (the US or China) will host their sovereign national data repositories in exchange for cheap, accessible, and highly integrated digital platforms. Their realistic path toward divided sovereignty lies exclusively through regional collective security alliances and the formation of supranational consortia (e.g., regional pan-African or pan-Arab cloud computing clusters).
+
+---
+
+## 4. STRATEGIC PROGNOSIS UP TO 2040: TRANSFORMING THE PATTERNS OF GLOBAL IT SPENDING
+
+On the horizon leading up to 2040, the inevitable transition of the global arena toward a "Technological Blockization" scenario and the mainstreaming of divided sovereignty will radically re-engineer the economics of the IT marketplace and the principles of national budgeting.
+
+1. **The Emergence of a "Sovereignty Tax" in GDP Metrics:** Where states during the zenith of hyper-globalization allocated an average of 2% to 4% of GDP to IT with the sole aim of maximizing commercial efficiency, by 2040, a fixed, non-reducible item will solidify within national budgets: a "geopolitical IT insurance levy" amounting to 1.5% to 2% of GDP. These funds will be strictly ring-fenced to subsidize and sustain the operations of non-market-driven but existential Class A and Class B backup infrastructures.
+2. **The Death of Traditional Vendor Licensing:** The legacy software business model, where a state or strategic enterprise pays perennial subscription fees for proprietary foreign software without underlying source code access, will face extinction. International procurement will permanently shift toward a _**"Sovereign-as-a-Service"**_ architecture. Transnational tech providers will be legally required not merely to sell endpoint access, but to hand over complete source code bases, neural network weights, and isolated local update nodes directly to sovereign state operators, structurally severed from the parent global enterprise.
+3. **The Hybridization of Open Source under National Standards:** Open-source software will lose its reputation as a globally "neutral commons." By 2040, a definitive nationalization of code repositories will occur (a trend already visible in the formation of sovereign forks of platforms like GitHub). Economic advantages will accrue to nation-states capable of most efficiently absorbing international open-source software and layering local cryptographic and cyber-defense frameworks on top of it, thereby driving down baseline CAPEX on primary R&D.
+4. **The Rise of a "Sovereign IT Export Market" for the Global South:** Russia and China will emerge as the primary exporters of divided sovereignty blueprints for smaller nations. Instead of purchasing prohibitively expensive Western proprietary ecosystems, developing countries will buy turn-key sovereign franchises—such as national payment gateways, digital identity modules, and sovereign cloud frames—securing robust protection against digital blackmail at an affordable price point.
+
+## CONCLUSION
+
+The economics of divided sovereignty demonstrate that national security in the digital age is fundamentally not a question of broad import substitution, but a cold **calculation of the cost of critical system downtime**. A strategy focused on "switching independence" allows a nation to bypass the ruinous financial outlays of absolute digital autarky, preserving fluid access to global innovations while guaranteeing the ironclad survival of its socio-economic fabric during moments of severe geopolitical fissure. Those who refuse to absorb the moderate cost of maintaining a sovereign backup core today will inevitably pay tomorrow with the total forfeiture of their national independence.
+
+---
+
+## REFERENCES
+
+1. Yhor, V. (2026). _Techno-sovereignty: Sovereignty in the Era of Digital and Technological Shifts_. Geopolitika.ru, November 9.
+2. Drucker, P. F. (1969). _The Age of Discontinuity: Guidelines to Our Changing Society_. Harper & Row.
+3. Castells, M. (2000). _The Information Age: Economy, Society and Culture_. Blackwell Publishers.
+4. Latour, B. (2005). _Reassembling the Social: An Introduction to Actor-Network-Theory_. Oxford University Press.
